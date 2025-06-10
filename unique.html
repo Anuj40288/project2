@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Animation ball</title>
+        <style type="text/css" media="all">
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                width: 100%;
+                height: 100vh;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            ul{
+                list-style-type: none;
+                display:flex;
+                border-bottom: 20px solid white;
+
+            }
+            li{
+                width: 50px;
+                height: 50px;
+                margin-left: 10px;
+                background-color: red;
+                border-radius: 50%;
+                box-shadow: 0px 0px 50px yellow;
+                animation-name: move;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes move{
+                0%{transform:translateY(0px) ;}
+                50%{transform: translateY(-150px);}
+                100%{transform: translate(0px);}
+                
+            }
+            li:nth-child(1){
+                background-color: brown;
+                animation-delay: 0.2s;
+
+            }
+            li:nth-child(2){
+                background-color: turquoise;
+                animation-delay: 0.6s;
+
+            }
+            li:nth-child(3){
+                background-color: orange;
+                animation-delay: 1.2s;
+            }
+                                                                         
+        </style>
+    </head>
+    <body bg color="black">
+        <br><br>
+        <h1 style="text-align: center; color:red; font-size: 35px;">Animation ball</h1>
+        <br><br>
+        <h1 style="text-align: center; color:blue; text-decoration: underline double ; ">css class btech cst</h1>
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+            </ul>
+        </div>
+
+    </body>
+</html>
